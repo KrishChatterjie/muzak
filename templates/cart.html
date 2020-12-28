@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="description" content="Sell Music">
+    <meta name="author" content="Krish Chatterjie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">  
+    <title>Muzak - Cart</title>
+<body>
+    <header>
+        <img class="k-logo" src="./img/K_logo.svg" alt="Logo">
+        <div class="site-name">
+            <a href="/"><h4>Muzak</h4></a>
+        </div>
+        <div class="icons">
+            <a href="/cart"><img class="cart" src="./img/cart.png" alt="Shopping Cart" title="Cart"></a>
+            <a href="/logout"><img class="logout" src="./img/logout.png" alt="Logout" title="Logout"></a>
+        </div>
+    </header>
+    <main id="cart-main">
+        <section class="user-cart">
+            <div class="cart-overview">
+                <div class="cart-title"><img src="./img/shopping-cart.png" alt="Shopping Cart">Cart</div>
+                <div class="total">Total: ${{total}}</div>
+            </div>
+
+            <div class="cart-list">
+                {% for product in cart %}
+                <article class="cart-album">
+                    <div class="cart-info">
+                        <img src="{{product['img']}}" alt="{{product['name']}}" class="cover">
+                        <div class="cart-text">
+                            <span class="cart-name">{{product['name']}}</span>
+                            <span class="cart-artist">{{product['artist']}}</span>
+                        </div>
+                    </div>
+                    <div class="cart-col">
+                        <span class="cart-price">{{product['price']}}</span>
+                        <form>
+                            <button type="submit"class="remove" name="delfromcart" value="{{product['name']}}">
+                                <img class="bin" src="./img/bin.png" alt="Remove" title="Remove">
+                            </button>
+                        </form>
+
+                    </div>
+                </article>
+                {% endfor %}
+        </section>
+    </main>
+</body>
+</html>

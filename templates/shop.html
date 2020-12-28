@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="description" content="Sell Music">
+    <meta name="author" content="Krish Chatterjie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">  
+    <title>Muzak</title>
+<body>
+    <header>
+        <img class="k-logo" src="./img/K_logo.svg" alt="Logo">
+        <div class="site-name">
+            <a href="/"><h4>Muzak</h4></a>
+        </div>
+        <div class="icons">
+            <a href="/cart"><img class="cart" src="./img/cart.png" alt="Shopping Cart" title="Cart"></a>
+            <a href="/logout"><img class="logout" src="./img/logout.png" alt="Logout" title="Logout"></a>
+        </div>
+    </header>
+    <main>
+        <section class="featured">
+            <div class="introduction">
+                <div class="intro-text">
+                    The greatest band that ever was...
+                </div>
+                <div class="zep-logo">
+                    <img src="./img/zep_logo.png" alt="Led Zeppelin">
+                </div>
+            </div>
+            <div class="zep-img">
+                <img class="band-img" src="./img/led_zep.png" alt="Plant Page Jones Bonham">
+            </div>
+        </section>
+        <section class="products">
+            <div class="title">The Albums You NEED!</div>
+
+            <div class="product-grid">
+                {% for product in products %}
+                <article class="album">
+                    <img src="{{product['img']}}" alt="{{product['name']}}" class="cover">
+                    <div class="info">
+                        <div class="text">
+                            <span class="name">{{product['name']}}</span>
+                            <span class="artist">{{product['artist']}}</span>
+                        </div>
+                        <span class="price">{{product['price']}}</span>
+                    </div>
+                    <form>
+                        <button type="submit"class="add" name="addtocart" value="{{product['name']}}">Add to Cart</button>
+                    </form>
+                </article>
+                {% endfor %}
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+    "products": 
+    [
+        {
+            "name": "Dark Side of the Moon", 
+            "artist": "Pink Floyd",
+            "price": "$15.99",
+            "img": "./img/albums/dsotm.jpg"
+        },
+        {
+            "name": "Animals", 
+            "artist": "Pink Floyd",
+            "price": "$10.99",
+            "img": "./img/albums/animals.jpg"
+        },
+        {
+            "name": "Houses of the Holy", 
+            "artist": "Led Zeppelin",
+            "price": "$12.99",
+            "img": "./img/albums/hoth.jpg"
+        },
+        {
+            "name": "Appetite for Destruction", 
+            "artist": "Guns n Roses",
+            "price": "$12.99",
+            "img": "./img/albums/afd.jpg"
+        },
+        {
+            "name": "Led Zeppelin I", 
+            "artist": "Led Zeppelin",
+            "price": "$15.99",
+            "img": "./img/albums/zep1.jpg"
+        },
+        {
+            "name": "Led Zeppelin II", 
+            "artist": "Led Zeppelin",
+            "price": "$15.99",
+            "img": "./img/albums/zep2.jpg"
+        },
+        {
+            "name": "Led Zeppelin III", 
+            "artist": "Led Zeppelin",
+            "price": "$15.99",
+            "img": "./img/albums/zep3.jpg"
+        },
+        {
+            "name": "Led Zeppelin IV", 
+            "artist": "Led Zeppelin",
+            "price": "$15.99",
+            "img": "./img/albums/zep4.jpg"
+        },
+        {
+            "name": "An American Prayer", 
+            "artist": "The Doors",
+            "price": "$14.99",
+            "img": "./img/albums/americanprayer.jpg"
+        },
+        {
+            "name": "Meddle", 
+            "artist": "Pink Floyd",
+            "price": "$10.99",
+            "img": "./img/albums/meddle.jpg"
+        },
+        {
+            "name": "Use Your Illusion", 
+            "artist": "Guns n Roses",
+            "price": "$12.99",
+            "img": "./img/albums/uyi.jpg"
+        },
+        {
+            "name": "Pulse", 
+            "artist": "Pink Floyd",
+            "price": "$14.99",
+            "img": "./img/albums/pulse.jpg"
+        }
+    ]
+
+}

@@ -1,0 +1,23 @@
+{
+    "users": [
+        {
+            "username": "Krish",
+            "password": "1234",
+            "cart": [
+                "Led Zeppelin I",
+                "Appetite for Destruction",
+                "Use Your Illusion",
+                "Pulse",
+                "Animals"
+            ]
+        },
+        {
+            "username": "brad",
+            "password": "Pass",
+            "cart": [
+                "Led Zeppelin I",
+                "Dark Side of the Moon"
+            ]
+        }
+    ]
+}

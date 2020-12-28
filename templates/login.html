@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="description" content="Sell Music">
+    <meta name="author" content="Krish Chatterjie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">  
+    <title>Muzak - Login</title>
+</head>
+<body>
+    <main id="login-main">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <script>
+            var messages = "{{ messages | safe }}";
+            alert(messages);
+        </script>  
+        {% endif %}
+        {% endwith %}
+        <div class="backbox">
+            <div class="welcome">
+                Welcome Back<img src="./img/K_logo.svg" alt="K Logo">
+            </div>
+            <form id="form" class="form"  method="POST">
+                <ul>
+                    <li>
+                        <div class="enter-username">
+                            <input type="text" placeholder="Enter Username" name="username" autocomplete="off"/>
+                        </div>    
+                    </li>
+                    <li>
+                        <div class="enter-password">
+                            <input type="password" placeholder="Enter Password" name="password" autocomplete="off"/>
+                        </div>
+                    </li>
+                </ul>
+                <div class="submit-button"><button class="submit">Submit</button></div>
+            </form>
+            <a href="/register">New User? Register</a>
+        </div>
+    </main>
+</body>
+</html>
