@@ -4,6 +4,8 @@ A site to sell you classic rock albums. 😄
 
 ## About The Project
 
+![Muzak Website](https://github.com/KrishChatterjie/muzak/blob/master/static/img/screenshot.png)
+
 I was told to create an e-commerce website, with both frontend and backend developed, within 48 hours. I created a website called Muzak, to sell rock n roll albums from the 70s and 80s. 🤘 
 
 Here's what I came up with:
@@ -26,8 +28,6 @@ These are the languages and framework used to build this website:
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple steps.
-
-### Installation
 
 1. Clone the repo
    ```sh
